@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fear-Heights.com - Your Vertigo-Free Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Fear-Heights.com</div>
+            <div id="user-auth">
+                <button id="login-button">Login with Google</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="intro-text">
+                <h1>Welcome to Fear-Heights.com</h1>
+                <h2>Your guide to a vertigo-free world.</h2>
+                <p>
+                    Are you planning your next big adventure, but a little voice inside is screaming, "How high up is that?!" You're not alone. We're a community of travelers who love to explore, but don't love that heart-pounding, knee-wobbling feeling that comes with unexpected heights.
+                </p>
+                <p>
+                    Let's be honest, we can't always trust our fearless friends who say, "Oh, it's not that high!" This is your safe space. At Fear-Heights.com, real people with a real fear of heights review and rate places around the globe. Search for a destination and find out if it's a "Grounded Paradise" or straight into "Adrenaline Junkie's Heaven."
+                </p>
+                <p><b>Because your vacation should be breathtaking, not terrifying.</b></p>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search for a location...">
+                <button id="search-button">Search</button>
+            </div>
+            <div id="map"></div>
+        </section>
+
+        <section id="location-details" class="hidden">
+            <h2 id="location-name"></h2>
+            <div class="ratings-summary">
+                <h3>Vertigo Vibe Rating</h3>
+                <p id="average-rating">Not yet rated.</p>
+            </div>
+
+            <div id="user-rating-section" class="hidden">
+                 <h3>Rate this place:</h3>
+                 <div class="rating-options">
+                     <div class="rating-option" data-value="0">0 - Grounded Paradise</div>
+                     <div class="rating-option" data-value="1">1 - A Little Lift</div>
+                     <div class="rating-option" data-value="2">2 - Window Watcher's Worry</div>
+                     <div class="rating-option" data-value="3">3 - Railing-Hugger's Realm</div>
+                     <div class="rating-option" data-value="4">4 - Adrenaline Junkie's Heaven</div>
+                 </div>
+                 <textarea id="comment-input" placeholder="Share your experience..."></textarea>
+                 <button id="submit-review">Submit Review</button>
+            </div>
+
+            <div class="comments-section">
+                <h3>User Reviews</h3>
+                <div id="comments-list">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fear-Heights.com. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPRcLh0jRVJ5ZMNUJyzHLpPHBu2Hl_Kqk&callback=initMap"></script>
+    </body>
+</html>
