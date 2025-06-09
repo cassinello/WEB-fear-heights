@@ -23,14 +23,15 @@ import {
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"; // <-- CORRECCIÓN APLICADA AQUÍ
 
 // CONFIGURACIÓN DE FIREBASE (Asegúrate de que tus datos están aquí)
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyApdeGseVldr23PBlU5utTprKEJG5U89j4",
-  authDomain: "fear-heights.firebaseapp.com",
-  projectId: "fear-heights",
-  storageBucket: "fear-heights.firebasestorage.app",
-  messagingSenderId: "423925382602",
-  appId: "1:423925382602:web:73e9ec5694d926052de333",
-  measurementId: "G-M53B0RYRSS"
+  apiKey: "AIzaSyBbzNWEqqF3Qe6d_-meH34rYoKKe8KoUZk",
+  authDomain: "fear-heights-2.firebaseapp.com",
+  projectId: "fear-heights-2",
+  storageBucket: "fear-heights-2.firebasestorage.app",
+  messagingSenderId: "553481001760",
+  appId: "1:553481001760:web:ac564662c1ad4d891f5545",
+  measurementId: "G-S0PJF08Z39"
 };
 
 // INICIALIZACIÓN DE SERVICIOS
@@ -48,7 +49,7 @@ let currentUser = null;
 let currentLocation = null;
 
 // LÓGICA DE GOOGLE MAPS
-window.initMap = function() {
+function initMap() {
     const initialLocation = { lat: 40.416775, lng: -3.703790 };
     map = new google.maps.Map(document.getElementById('map'), {
         zoom: 5,
@@ -168,3 +169,5 @@ async function loadRatingsForLocation(placeId) {
     const average = (totalRating / reviewsCount).toFixed(1);
     averageRatingP.innerText = `Valoración media: ${average} / 4 (${reviewsCount} valoraciones)`;
 }
+// Llamamos a la función para inicializar el mapa nosotros mismos
+initMap();
