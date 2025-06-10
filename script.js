@@ -25,13 +25,12 @@ import {
 // CONFIGURACIÓN DE FIREBASE (Asegúrate de que tus datos están aquí)
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBbzNWEqqF3Qe6d_-meH34rYoKKe8KoUZk",
-  authDomain: "fear-heights-2.firebaseapp.com",
-  projectId: "fear-heights-2",
-  storageBucket: "fear-heights-2.firebasestorage.app",
-  messagingSenderId: "553481001760",
-  appId: "1:553481001760:web:ac564662c1ad4d891f5545",
-  measurementId: "G-S0PJF08Z39"
+  apiKey: "AIzaSyB_GTEf13pB2sJ4bbscZALuj3cI4fL1iOY",
+  authDomain: "fear-heights-demo.firebaseapp.com",
+  projectId: "fear-heights-demo",
+  storageBucket: "fear-heights-demo.appspot.com",
+  messagingSenderId: "99581898342",
+  appId: "1:99581898342:web:e3953f7df2d55e0c517d0c"
 };
 
 // INICIALIZACIÓN DE SERVICIOS
